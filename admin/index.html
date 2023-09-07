@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Login</title> 
+    <link rel="stylesheet" href="istyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="title"><span>Login</span></div>
+        <form action="" id = "loginForm">
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input id = "EmailID" type="text" placeholder="Email" required>
+          </div>
+          <div class="row">
+            <i class="fas fa-lock"></i>
+            <input id="PasswordID" type="password" placeholder="Password" required>
+          </div>
+          <div class="pass"><a href="#">Forgot password?</a></div>
+          <div class="row button">
+            <input type="button" value="Login" onclick="loginFunction()">
+          </div>
+        
+        </form>
+      </div>
+    </div>
+
+   
+    
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js"></script>
+    <script src="js/login.js"></script>
+    <script type="module" src="js/firebase_config.js"></script>
+
+    <style>
+        footer {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: white;
+            color: #3EB7BB;
+            padding: 5px 10px;
+        }
+    
+        footer p {
+            margin: 0;
+        }
+    </style>
+
+<footer>
+    <a href="https://codexcelerate.me/"><p>Made by CodeXcelerate</p></a>
+</footer>
+  </body>
+</html>
